@@ -12,3 +12,9 @@ type CurrentWeather struct {
 type WeatherResponse struct {
 	CurrentWeather CurrentWeather `json:"current_weather"`
 }
+
+type DailyForecast struct {
+	Date        string  `json:"date"`
+	Temperature float64 `json:"temperature"` // Average temperature
+	WeatherCode int     `json:"weathercode"` // Placeholder for detailed weather code
+}
